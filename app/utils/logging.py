@@ -21,7 +21,7 @@ def _init_logger(name: str):
     handler = logging.StreamHandler(sys.stdout)
     # Format the log message
     formatter = logging.Formatter(
-        "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        "%(asctime)s - %(name)s - %(module)s - %(levelname)s - %(message)s"
     )
     handler.setFormatter(formatter)
     # Add the handler to the logger
