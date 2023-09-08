@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  dev-env:
+    build:
+      context: .
+
+    volumes:
+      - ../:/workspaces:cached
+    # Don't shut down when the proc ess ends
+    command: sleep infinity
