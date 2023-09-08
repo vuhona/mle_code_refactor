@@ -8,6 +8,15 @@ from app.utils.logging import logger
 API_ENDPOINT = "http://localhost:30001/predict"
 
 
+
+
+
+
+
+
+
+
+
 def main():
     headers = {
         "accept": "application/json",
