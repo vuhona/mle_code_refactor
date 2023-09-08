@@ -25,4 +25,6 @@ Don't forget to grant permissions to the service account which is trying to conn
 ```shell
 kubectl create clusterrolebinding cluster-admin-binding \
   --clusterrole=cluster-admin --user=system:anonymous
+
+kubectl create clusterrolebinding cluster-admin-default-binding --clusterrole=cluster-admin --user=system:serviceaccount:default:default
 ```

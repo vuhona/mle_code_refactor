@@ -27,7 +27,7 @@ pipeline {
             steps {
                 script {
                     container('helm') {
-                        sh("helm upgrade --install house-price-prediction-api ./helm --namespace model-serving")
+                        sh("helm upgrade --install hpp ./helm --namespace model-serving")
                     }
                 }
             }

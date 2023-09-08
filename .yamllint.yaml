@@ -15,6 +15,6 @@ rules:
     level: warning
   # https://yamllint.readthedocs.io/en/stable/rules.html#module-yamllint.rules.comments
   comments:
-    require-starting-space: true #this comment will failed
+    require-starting-space: true # this comment will failed
     ignore-shebangs: true # ignore shebangs when using require-starting-space
-    min-spaces-from-content: 2 # TWO spaces from the number 2
+    min-spaces-from-content: 2  # Two spaces from the number 2
