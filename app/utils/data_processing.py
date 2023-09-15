@@ -17,15 +17,3 @@ def format_input_data(data: HouseInfo):
         A Pandas DataFrame: Convert the input data into a Pandas DataFrame
     """
     return pd.DataFrame(jsonable_encoder(data), index=[0])
-
-
-def another_format_input_data(data: HouseInfo):
-    """Format the input data to a prediction data structure
-
-    Args:
-        data (HouseInfo): Information about a house
-
-    Returns:
-        A Pandas DataFrame: Convert the input data into a Pandas DataFrame
-    """
-    return pd.DataFrame(jsonable_encoder(data), index=[0])
